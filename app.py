@@ -1,6 +1,5 @@
 
 import streamlit as st
-from core.validators import validate_inputs
 
 st.set_page_config(page_title="Business Launch Advisor", page_icon="🚀", layout="wide")
 
