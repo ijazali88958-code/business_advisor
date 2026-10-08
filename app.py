@@ -46,6 +46,7 @@ if run:
         "online_or_physical": online_or_physical,
         "experience": experience,
     }
+    errors = vlidate_inputs(inputs)
     if errors:
         for error in errors:
             st.error(error)
