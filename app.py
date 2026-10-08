@@ -1,6 +1,5 @@
 
 import streamlit as st
-from core.crew_builder import run_consulting_crew
 from core.validators import validate_inputs
 
 st.set_page_config(page_title="Business Launch Advisor", page_icon="🚀", layout="wide")
