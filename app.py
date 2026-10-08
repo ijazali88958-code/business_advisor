@@ -1,6 +1,7 @@
 
 import streamlit as st
-
+from core.crew_builder import run_consulting_crew
+from core.validators import validate_inputs
 st.set_page_config(page_title="Business Launch Advisor", page_icon="🚀", layout="wide")
 
 st.title("🚀 Business Launch Advisor")
@@ -46,7 +47,7 @@ if run:
         "online_or_physical": online_or_physical,
         "experience": experience,
     }
-    errors = vlidate_inputs(inputs)
+    errors = validate_inputs(inputs)
     if errors:
         for error in errors:
             st.error(error)
