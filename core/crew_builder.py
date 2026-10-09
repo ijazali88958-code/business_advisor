@@ -1,9 +1,10 @@
 
 from crewai import Agent, Crew, Process, Task
 from core.config import MODEL_NAME
-from core.groq_client import chat, GroqServiceError
+
 from research.verified_search import search_verified_sources
 
+from .groq_client import chat, GroqServiceError
 
 def _run_agent(role: str, goal: str, task_text: str, evidence: str) -> str:
     system = f"""
