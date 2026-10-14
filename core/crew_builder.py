@@ -1,4 +1,4 @@
-
+from core.crew_builder import run_consulting_crew
 from crewai import Agent, Crew, Process, Task
 from core.config import MODEL_NAME
 
